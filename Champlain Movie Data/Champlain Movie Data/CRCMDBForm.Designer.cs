@@ -39,7 +39,7 @@
             this.moviesButton.Name = "moviesButton";
             this.moviesButton.Size = new System.Drawing.Size(93, 23);
             this.moviesButton.TabIndex = 0;
-            this.moviesButton.Text = "MAnage Movies";
+            this.moviesButton.Text = "Manage Movies";
             this.moviesButton.UseVisualStyleBackColor = true;
             // 
             // actorsButton
