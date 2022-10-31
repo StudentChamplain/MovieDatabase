@@ -3,5 +3,6 @@ CREATE TABLE [dbo].[MovieGenre] (
     [MovieId] INT NOT NULL, 
     [GenreId] INT NOT NULL, 
     CONSTRAINT [FK_Genre_MovieId] FOREIGN KEY ([MovieId]) REFERENCES [Movie]([MovieId]), 
-    CONSTRAINT [FK_Genre_GenreId] FOREIGN KEY ([GenreID]) REFERENCES [Genre]([GenreId])
+    CONSTRAINT [FK_Genre_GenreId] FOREIGN KEY ([GenreID]) REFERENCES [Genre]([GenreId]), 
+    CONSTRAINT [PK_MovieGenre] PRIMARY KEY ([MovieGenreId])
 )
