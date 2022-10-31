@@ -41,6 +41,7 @@
             this.moviesButton.TabIndex = 0;
             this.moviesButton.Text = "Manage Movies";
             this.moviesButton.UseVisualStyleBackColor = true;
+            this.moviesButton.Click += new System.EventHandler(this.moviesButton_Click);
             // 
             // actorsButton
             // 
