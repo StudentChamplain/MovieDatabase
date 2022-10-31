@@ -1,6 +1,5 @@
-CREATE TABLE [dbo].[Role]
-(
-	[RoleId] INT NOT NULL PRIMARY KEY IDENTITY, 
+CREATE TABLE [dbo].[Role] (
+	[RoleId] INT IDENTITY (1, 1) NOT NULL, 
     [MovieId] INT NOT NULL, 
     [ActorId] INT NOT NULL, 
     CONSTRAINT [FK_Role_MovieId] FOREIGN KEY ([MovieId]) REFERENCES [Movie]([MovieId]), 
