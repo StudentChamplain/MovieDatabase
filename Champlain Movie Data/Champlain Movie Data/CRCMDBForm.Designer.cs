@@ -35,9 +35,10 @@
             // 
             // moviesButton
             // 
-            this.moviesButton.Location = new System.Drawing.Point(33, 38);
+            this.moviesButton.Location = new System.Drawing.Point(44, 47);
+            this.moviesButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.moviesButton.Name = "moviesButton";
-            this.moviesButton.Size = new System.Drawing.Size(93, 23);
+            this.moviesButton.Size = new System.Drawing.Size(124, 28);
             this.moviesButton.TabIndex = 0;
             this.moviesButton.Text = "Manage Movies";
             this.moviesButton.UseVisualStyleBackColor = true;
@@ -45,30 +46,34 @@
             // 
             // actorsButton
             // 
-            this.actorsButton.Location = new System.Drawing.Point(135, 38);
+            this.actorsButton.Location = new System.Drawing.Point(180, 47);
+            this.actorsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.actorsButton.Name = "actorsButton";
-            this.actorsButton.Size = new System.Drawing.Size(93, 23);
+            this.actorsButton.Size = new System.Drawing.Size(124, 28);
             this.actorsButton.TabIndex = 1;
             this.actorsButton.Text = "Manage Actors";
             this.actorsButton.UseVisualStyleBackColor = true;
+            this.actorsButton.Click += new System.EventHandler(this.actorsButton_Click);
             // 
             // genreButton
             // 
-            this.genreButton.Location = new System.Drawing.Point(240, 38);
+            this.genreButton.Location = new System.Drawing.Point(320, 47);
+            this.genreButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.genreButton.Name = "genreButton";
-            this.genreButton.Size = new System.Drawing.Size(93, 23);
+            this.genreButton.Size = new System.Drawing.Size(124, 28);
             this.genreButton.TabIndex = 2;
             this.genreButton.Text = "Genre";
             this.genreButton.UseVisualStyleBackColor = true;
             // 
             // movieDatabaseForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 100);
+            this.ClientSize = new System.Drawing.Size(479, 123);
             this.Controls.Add(this.genreButton);
             this.Controls.Add(this.actorsButton);
             this.Controls.Add(this.moviesButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "movieDatabaseForm";
             this.Text = "CRCMDB";
             this.ResumeLayout(false);

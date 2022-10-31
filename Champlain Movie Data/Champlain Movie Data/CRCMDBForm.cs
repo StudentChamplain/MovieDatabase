@@ -25,5 +25,11 @@ namespace Champlain_Movie_Data
 
             
         }
+
+        private void actorsButton_Click(object sender, EventArgs e)
+        {
+            ActorForm actorForm = new ActorForm();
+            actorForm.ShowDialog();
+        }
     }
 }
