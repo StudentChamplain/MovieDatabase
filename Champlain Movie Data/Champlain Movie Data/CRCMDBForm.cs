@@ -16,5 +16,14 @@ namespace Champlain_Movie_Data
         {
             InitializeComponent();
         }
+
+        private void moviesButton_Click(object sender, EventArgs e)
+        {
+            DisplayMoviesForm details = new DisplayMoviesForm();
+
+            details.ShowDialog();
+
+            
+        }
     }
 }
