@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActorForm.Designer.cs">
+      <DependentUpon>ActorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CRCMDBForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,8 +84,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MovieDatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MovieDatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MovieDatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ActorForm.resx">
+      <DependentUpon>ActorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CRCMDBForm.resx">
       <DependentUpon>CRCMDBForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +119,17 @@
     </None>
     <None Include="MovieDatabaseDataSet.xss">
       <DependentUpon>MovieDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MovieDatabaseDataSet1.xsc">
+      <DependentUpon>MovieDatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MovieDatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MovieDatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MovieDatabaseDataSet1.xss">
+      <DependentUpon>MovieDatabaseDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
