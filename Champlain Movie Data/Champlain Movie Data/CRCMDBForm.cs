@@ -31,5 +31,11 @@ namespace Champlain_Movie_Data
             ActorForm actorForm = new ActorForm();
             actorForm.ShowDialog();
         }
+
+        private void genreButton_Click(object sender, EventArgs e)
+        {
+            GenreForm genreForm = new GenreForm();
+            genreForm.ShowDialog();
+        }
     }
 }

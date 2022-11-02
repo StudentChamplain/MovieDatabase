@@ -36,7 +36,7 @@
             // moviesButton
             // 
             this.moviesButton.Location = new System.Drawing.Point(44, 47);
-            this.moviesButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.moviesButton.Margin = new System.Windows.Forms.Padding(4);
             this.moviesButton.Name = "moviesButton";
             this.moviesButton.Size = new System.Drawing.Size(124, 28);
             this.moviesButton.TabIndex = 0;
@@ -47,7 +47,7 @@
             // actorsButton
             // 
             this.actorsButton.Location = new System.Drawing.Point(180, 47);
-            this.actorsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.actorsButton.Margin = new System.Windows.Forms.Padding(4);
             this.actorsButton.Name = "actorsButton";
             this.actorsButton.Size = new System.Drawing.Size(124, 28);
             this.actorsButton.TabIndex = 1;
@@ -58,12 +58,13 @@
             // genreButton
             // 
             this.genreButton.Location = new System.Drawing.Point(320, 47);
-            this.genreButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.genreButton.Margin = new System.Windows.Forms.Padding(4);
             this.genreButton.Name = "genreButton";
             this.genreButton.Size = new System.Drawing.Size(124, 28);
             this.genreButton.TabIndex = 2;
             this.genreButton.Text = "Genre";
             this.genreButton.UseVisualStyleBackColor = true;
+            this.genreButton.Click += new System.EventHandler(this.genreButton_Click);
             // 
             // movieDatabaseForm
             // 
@@ -73,7 +74,7 @@
             this.Controls.Add(this.genreButton);
             this.Controls.Add(this.actorsButton);
             this.Controls.Add(this.moviesButton);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "movieDatabaseForm";
             this.Text = "CRCMDB";
             this.ResumeLayout(false);
